@@ -4,8 +4,7 @@ function isFood(obj) {
     typeof obj.id === "number" &&
     typeof obj.name === "string" &&
     typeof obj.price === "number" &&
-    typeof obj.ingredients.ingredientName === "string" &&
-    typeof obj.ingredients.quantity === "string"
+    typeof obj.description === "string"
   );
 }
 
@@ -14,10 +13,19 @@ const foods = [
     id: 1,
     name: "Sisig",
     price: 20,
-    ingredients: {
-      ingredientName: "pork",
-      quantity: "2lbs",
-    },
+    description: "It's a sisig!",
+  },
+  {
+    id: 2,
+    name: "Bulalo",
+    price: 25,
+    description: "It's a bulalo!",
+  },
+  {
+    id: 3,
+    name: "Pancit",
+    price: 15,
+    description: "It's a pancit!",
   },
 ];
 
