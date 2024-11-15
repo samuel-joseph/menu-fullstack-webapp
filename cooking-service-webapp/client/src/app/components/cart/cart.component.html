@@ -1,0 +1,4 @@
+<div *ngFor="let item of cartItems">
+  <p>{{ item.name }} x {{ item.quantity }} - ${{ item.price * item.quantity }}</p>
+</div>
+<a routerLink="/checkout" class="btn">Checkout</a>

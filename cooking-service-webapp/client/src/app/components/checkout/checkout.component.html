@@ -1,0 +1,9 @@
+<h1>Checkout</h1>
+<ul>
+  <li *ngFor="let item of cartItems">
+    {{ item.name }} x {{ item.quantity }} - ${{ item.price * item.quantity }}
+  </li>
+</ul>
+<h3>Total: ${{ total }}</h3>
+<a href="https://venmo.com/YOUR_FRIEND_VENMO" target="_blank">Pay via Venmo</a> |
+<a href="https://zellepay.com/YOUR_FRIEND_ZELLE" target="_blank">Pay via Zelle</a>

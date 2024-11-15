@@ -1,1 +1,14 @@
-node_modules/
+# Ignore node_modules in both client and server
+client/node_modules/
+server/node_modules/
+
+# Ignore build artifacts for Angular and general Node.js
+client/dist/
+server/build/
+
+# Ignore environment files
+client/.env
+server/.env
+
+# Other global ignores
+.DS_Store
