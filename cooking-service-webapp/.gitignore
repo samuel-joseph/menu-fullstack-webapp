@@ -12,3 +12,4 @@ server/.env
 
 # Other global ignores
 .DS_Store
+

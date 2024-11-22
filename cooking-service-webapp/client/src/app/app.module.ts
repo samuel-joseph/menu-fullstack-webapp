@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { FoodListComponent } from './components/food-list/food-list.component';
 import { CartComponent } from './components/cart/cart.component';
 import { CheckoutComponent } from './components/checkout/checkout.component';
+import { SmsService } from './services/sms.service';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,7 @@ import { CheckoutComponent } from './components/checkout/checkout.component';
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [SmsService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
